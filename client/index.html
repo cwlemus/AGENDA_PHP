@@ -1,0 +1,83 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="css/foundation.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+
+    <div class="main">
+      <div class="login-container">
+        <div class="callout primary login">
+          <h4>Inicia sesión</h4>
+          <form id="login-form">
+            <div class="row align-center">
+              <div class="small-7 columns">
+                <label>Usuario
+                  <input type="text" id="user" required>
+                </label>
+              </div>
+              <div class="small-7 columns">
+                <label>Contraseña
+                  <input type="password" id="password" required>
+                </label>
+              </div>
+              <div class="small-7 columns btn-container">
+                <button id="enviar-btn" class="button">Enviar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-panel" id="contact-panel">
+      <a class="contact-panel-button" id="btn-registrar">Registrar Usuario</a>
+      <form id="FrmUsuarioNew" data-abide>
+        <div class="row">
+          <label>Nombre completo *
+            <input type="text" id="nombre" placeholder="Nombre completo" required>
+          </label>
+        </div>
+        <div class="row">
+          <label>Email *
+            <input type="email" id="email" placeholder="Email" required>
+          </label>
+        </div>
+        <div class="row">
+          <label>Contraseña *
+            <input type="password" id='psw' placeholder="Contraseña" required>
+          </label>
+        </div>
+        <div class="row">
+          <label>Verificador contraseña *
+            <input type="password" id="verificador"  placeholder="verifica tu password">
+          </label>
+        </div>
+        <div class="row">
+          <label>Fecha de Nacimiento *
+            <input type="text" class="span2" id="fec_nacimiento" placeholder="Fecha Nacimiento" required/>
+          </label>
+        </div>
+
+        <div class="contact-panel-actions">
+          <button class="cancel-button" id="cancelar-btn">Cancelar</button>
+          <button  class="button submit-button" id="registrar-btn">Registrar</button>
+        </div>
+      </form>
+    </div>
+
+
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
